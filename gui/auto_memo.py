@@ -1,9 +1,11 @@
-import time, subprocess, platform
-import pyautogui as pa
+import time
+import subprocess
+import platform
 import pyperclip
+import pyautogui as pa
 
 if platform.system() == 'Windows':
-    subprocess.Popen(r'c:\Windows\notepad.exe')
+    subprocess.Popen(r'C:\Windows\notepad.exe')
     time.sleep(2)
     pa.write('Hello World!!!')
     pa.press('enter')
